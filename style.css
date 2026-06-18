@@ -1,0 +1,184 @@
+:root {
+  --ink: #1a1a1a;
+  --muted: #666;
+  --rule: #e5e5e5;
+  --accent: #1f3a5f;
+  --bg: #fdfdfb;
+  --max-width: 44rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Charter", "Georgia", "Cambria", "Times New Roman", serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.intro {
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.intro .photo {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--rule);
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+.intro .title {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.intro .affiliation {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  font-size: 0.95rem;
+}
+
+.contact a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.contact a:hover {
+  border-bottom-color: var(--accent);
+}
+
+section {
+  margin-top: 2.25rem;
+}
+
+h2 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.3rem;
+  margin: 0 0 1rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 0.75rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+ul,
+ol {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+ul li,
+ol li {
+  margin-bottom: 0.5rem;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.timeline .when {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.92rem;
+  padding-top: 0.1rem;
+}
+
+.papers {
+  padding-left: 1.4rem;
+}
+
+.papers li {
+  margin-bottom: 0.9rem;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 540px) {
+  main {
+    padding: 2rem 1.1rem 3rem;
+  }
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .intro .contact {
+    justify-content: center;
+  }
+  .intro .photo {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .timeline li {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+  .timeline .when {
+    font-size: 0.85rem;
+  }
+}
