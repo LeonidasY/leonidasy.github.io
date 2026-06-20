@@ -4,7 +4,7 @@
   --rule: #e5e5e5;
   --accent: #1f3a5f;
   --bg: #fdfdfb;
-  --max-width: min(1100px, 75ch);
+  --max-width: min(1400px, 90ch);
 }
 
 * {
