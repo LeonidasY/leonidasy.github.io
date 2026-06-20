@@ -4,7 +4,7 @@
   --rule: #e5e5e5;
   --accent: #1f3a5f;
   --bg: #fdfdfb;
-  --max-width: min(1400px, 90ch);
+  --max-width: min(1600px, 100ch);
 }
 
 * {
@@ -129,7 +129,7 @@ ol li {
 
 .timeline li {
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 6rem 1fr;
   gap: 1rem;
   margin-bottom: 0.9rem;
 }
