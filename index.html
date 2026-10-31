@@ -26,12 +26,12 @@
       <section id="about">
         <h2>About</h2>
         <p>
-          I'm an ML researcher working on language models and vision transformers, with a focus on
-          making them more efficient through vocabulary transfer and multi-word
-          tokenization for text, dynamic tokenization for vision, and preference learning for code
-          generation. I'm currently a Research Intern at Epic Games, working on
-          vision-language models for multi-label classification, synthetic data generation for downstream classifier fine-tuning,
-          and perceptual metrics.
+          At Epic Games, I worked on vision-language models across three areas: multi-label
+          toxicity detection with finetuning-free Sparse Attention Vectors; zero-shot long-video
+          toxicity detection with Gemini 3.5 Flash, combining ffmpeg segmentation with frame-level
+          timestamp grounding to suppress temporal hallucination; and DreamSim-based
+          intellectual-property detection, fine-tuned with hinge and Threshold-Consistent Margin
+          (TCM) losses and evaluated with perceptual image-similarity metrics.
         </p>
       </section>
 
@@ -42,10 +42,13 @@
             <span class="when">Jan 2026 – Dec 2026</span>
             <span class="what">
               <strong>Research Intern</strong>, Epic Games, London.<br />
-              Adapted vision-language models from autoregressive generation to multi-label
-              classification via sparse attention vectors. Generated synthetic image data for
-              fine-tuning downstream classifiers. Currently working on developing perceptual metrics
-              for evaluating image similarity.
+              Adapted Sparse Attention Vectors (SAVs) to multi-label toxicity
+              detection in vision-language models via sparse attention-head activations as
+              classifiers. Built a zero-shot video toxicity
+              detection service on Gemini 3.5 Flash, segmenting long videos with ffmpeg and grounding
+              predicted timestamps in explicit frame-level input timecodes to reduce temporal hallucination.
+              Improved DreamSim for intellectual-property detection by fine-tuning with the original
+              hinge loss and a Threshold-Consistent Margin (TCM) loss.
             </span>
           </li>
           <li>
